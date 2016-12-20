@@ -1,35 +1,61 @@
 {
-  "name": "react-mobile-datepicker",
-  "version": "3.0.2",
-  "description": "一个移动端时间选择器react组件",
-  "main": "./dist/react-mobile-datepicker.js",
-  "amdName": "reactMobileDatePicker",
-  "minified:main": "dist/react-mobile-datepicker.min.js",
-  "repository": "lanjingling0510/react-mobile-datepicker",
-  "homepage": "https://github.com/lanjingling0510/react-mobile-datepicker#readme",
-  "keywords": [
-    "react-component",
-    "react-datepicker",
-    "date",
-    "datepicker",
-    "react",
-    "mobile",
-    "calendar"
+  "_args": [
+    [
+      {
+        "raw": "react-mobile-datepicker",
+        "scope": null,
+        "escapedName": "react-mobile-datepicker",
+        "name": "react-mobile-datepicker",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/shengjie/baidu_pan/projects/麦家公寓/SOURCE/mj-site"
+    ]
   ],
-  "scripts": {
-    "clean": "rm -rf dist/",
-    "build": "npm-run-all clean transpile minify size",
-    "transpile": "rollup -c rollup.config.js -m ${npm_package_main}.map -f umd -n $npm_package_amdName -o $npm_package_main",
-    "minify": "uglifyjs $npm_package_main -cm -o $npm_package_minified_main -p relative --in-source-map ${npm_package_main}.map --source-map ${npm_package_minified_main}.map",
-    "size": "size=$(gzip-size $npm_package_minified_main | pretty-bytes) && echo \"gzip size: $size\"",
-    "start": "webpack-dev-server",
-    "release": "scripts/release",
-    "preview-release": "scripts/preview-release",
-    "mocha": "./node_modules/.bin/mocha --compilers js:babel-core/register --require ./test/helper.js --recursive",
-    "test": "./node_modules/.bin/nyc npm run mocha",
-    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
+  "_cnpm_publish_time": 1482043624010,
+  "_from": "react-mobile-datepicker@latest",
+  "_id": "react-mobile-datepicker@3.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-mobile-datepicker",
+  "_nodeVersion": "7.0.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-mobile-datepicker-3.0.2.tgz_1482043621501_0.42980107106268406"
   },
-  "author": "rainie",
+  "_npmUser": {
+    "name": "chenyutian0510",
+    "email": "463103063@qq.com"
+  },
+  "_npmVersion": "4.0.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-mobile-datepicker",
+    "scope": null,
+    "escapedName": "react-mobile-datepicker",
+    "name": "react-mobile-datepicker",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-mobile-datepicker/download/react-mobile-datepicker-3.0.2.tgz",
+  "_shasum": "213c22bf1770bd1c1bd5b71f9cc3e2074fd64ce0",
+  "_shrinkwrap": null,
+  "_spec": "react-mobile-datepicker",
+  "_where": "/Users/shengjie/baidu_pan/projects/麦家公寓/SOURCE/mj-site",
+  "amdName": "reactMobileDatePicker",
+  "author": {
+    "name": "rainie"
+  },
+  "bugs": {
+    "url": "https://github.com/lanjingling0510/react-mobile-datepicker/issues"
+  },
+  "dependencies": {},
+  "description": "一个移动端时间选择器react组件",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.9.0",
@@ -82,5 +108,53 @@
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
-  "license": "ISC"
+  "directories": {},
+  "dist": {
+    "shasum": "213c22bf1770bd1c1bd5b71f9cc3e2074fd64ce0",
+    "size": 332960,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-mobile-datepicker/download/react-mobile-datepicker-3.0.2.tgz"
+  },
+  "gitHead": "53c4a97dede73ffd914e90fe0b7a62bfd9816d99",
+  "homepage": "https://github.com/lanjingling0510/react-mobile-datepicker#readme",
+  "keywords": [
+    "react-component",
+    "react-datepicker",
+    "date",
+    "datepicker",
+    "react",
+    "mobile",
+    "calendar"
+  ],
+  "license": "ISC",
+  "main": "./dist/react-mobile-datepicker.js",
+  "maintainers": [
+    {
+      "name": "chenyutian0510",
+      "email": "463103063@qq.com"
+    }
+  ],
+  "minified:main": "dist/react-mobile-datepicker.min.js",
+  "name": "react-mobile-datepicker",
+  "optionalDependencies": {},
+  "publish_time": 1482043624010,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanjingling0510/react-mobile-datepicker.git"
+  },
+  "scripts": {
+    "build": "npm-run-all clean transpile minify size",
+    "clean": "rm -rf dist/",
+    "coverage": "nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls",
+    "minify": "uglifyjs $npm_package_main -cm -o $npm_package_minified_main -p relative --in-source-map ${npm_package_main}.map --source-map ${npm_package_minified_main}.map",
+    "mocha": "mocha --compilers js:babel-core/register --require ./test/helper.js --recursive",
+    "preview-release": "scripts/preview-release",
+    "release": "scripts/release",
+    "size": "size=$(gzip-size $npm_package_minified_main | pretty-bytes) && echo \"gzip size: $size\"",
+    "start": "webpack-dev-server",
+    "test": "nyc npm run mocha",
+    "transpile": "rollup -c rollup.config.js -m ${npm_package_main}.map -f umd -n $npm_package_amdName -o $npm_package_main"
+  },
+  "version": "3.0.2"
 }
